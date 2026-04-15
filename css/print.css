@@ -1,0 +1,179 @@
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .app-header {
+    display: none !important;
+  }
+
+  .btn-back,
+  .btn-settings,
+  .settings-panel,
+  #view-home,
+  #view-manage,
+  #view-standings,
+  .btn-print,
+  .no-print,
+  .fixture-datetime {
+    display: none !important;
+  }
+
+  /* Mostrar el que esté activo entre fixtures y standings */
+  #view-fixtures.active,
+  #view-standings.active {
+    display: block !important;
+  }
+
+  /* ── Cabecera de impresión del calendario ── */
+  #view-fixtures.active::before {
+    content: "";
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .print-calendar-header {
+    display: flex !important;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 3px solid #0d4a1a;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+
+  .print-calendar-header img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-calendar-header-text h2 {
+    margin: 0 0 2px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #0d4a1a;
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-calendar-header-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+  }
+
+  /* ── Imprimir clasificación ── */
+  .standings-header img {
+    display: block !important;
+    height: 70px;
+    width: 70px;
+  }
+
+  thead tr {
+    background: #0d4a1a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  table {
+    min-width: auto;
+  }
+
+  th, td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .td-pts {
+    font-size: 18px !important;
+    font-weight: 900 !important;
+  }
+
+  .th-pts {
+    font-size: 14px !important;
+  }
+
+  /* ── Imprimir calendario ── */
+  .card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    padding: 12px !important;
+    margin-bottom: 12px !important;
+    page-break-inside: avoid;
+  }
+
+  .fixture-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #0d4a1a;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+
+  .fixture-jornada-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: #0d4a1a;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Ocultar bloque de pantalla, mostrar bloque de impresión */
+  .fixture-match-datetime {
+    display: none !important;
+  }
+
+  .fixture-match-row-print {
+    display: block !important;
+  }
+
+  .fixture-match-datetime-print {
+    display: flex !important;
+    gap: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 3px;
+  }
+
+  .fixture-teams {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    padding: 6px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .fixture-teams span:first-child { text-align: right; }
+  .fixture-teams span:last-child  { text-align: left; }
+
+  .fixture-score-blank {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+    letter-spacing: 2px;
+  }
+
+  .fixture-score strong {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #0d4a1a;
+  }
+
+  .item {
+    border: none !important;
+    padding: 0 !important;
+  }
+}

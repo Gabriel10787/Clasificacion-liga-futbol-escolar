@@ -1,0 +1,19 @@
+{
+  "name": "Liga Fútbol CEIP El Vetón",
+  "short_name": "Liga Vetón",
+  "description": "Gestión de liga de fútbol escolar sin conexión a internet",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a6b2e",
+  "theme_color": "#1a6b2e",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

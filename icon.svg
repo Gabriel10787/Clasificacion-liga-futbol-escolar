@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="32" fill="#1a6b2e"/>
+  <circle cx="96" cy="88" r="52" fill="white" opacity="0.95"/>
+  <circle cx="96" cy="88" r="52" fill="none" stroke="#0d4a1e" stroke-width="3"/>
+  <!-- Pentagon center -->
+  <polygon points="96,64 114,77 107,98 85,98 78,77" fill="#1a6b2e"/>
+  <!-- Top -->
+  <polygon points="96,36 108,48 104,62 88,62 84,48" fill="#1a6b2e" transform="translate(0,0) scale(0.7) translate(41,42)"/>
+  <!-- Simplified football patches -->
+  <circle cx="96" cy="88" r="10" fill="#1a6b2e"/>
+  <line x1="96" y1="36" x2="96" y2="140" stroke="none"/>
+  <!-- Text below ball -->
+  <text x="96" y="162" font-size="18" font-weight="900" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" letter-spacing="1">LIGA</text>
+  <text x="96" y="180" font-size="11" font-weight="600" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, Helvetica, sans-serif">EL VETÓN</text>
+</svg>
